@@ -16,6 +16,8 @@
 		F1C4261B2B260FFB00553DF5 /* twitter_cloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4261A2B260FFB00553DF5 /* twitter_cloneUITestsLaunchTests.swift */; };
 		F1C426292B2616F400553DF5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1C426282B2616F400553DF5 /* SnapKit */; };
 		F1C4262B2B26197200553DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C4262A2B26197200553DF5 /* Assets.xcassets */; };
+		F1C4262E2B26D08800553DF5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1C4262D2B26D08800553DF5 /* SnapKit */; };
+		F1C8D0F52B274E0300F7C59E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8D0F42B274E0300F7C59E /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		F1C426182B260FFB00553DF5 /* twitter_cloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twitter_cloneUITests.swift; sourceTree = "<group>"; };
 		F1C4261A2B260FFB00553DF5 /* twitter_cloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twitter_cloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F1C4262A2B26197200553DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1C8D0F42B274E0300F7C59E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C426292B2616F400553DF5 /* SnapKit in Frameworks */,
+				F1C4262E2B26D08800553DF5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +109,7 @@
 				F1C425FB2B260FF800553DF5 /* ViewController.swift */,
 				F1C426022B260FFA00553DF5 /* LaunchScreen.storyboard */,
 				F1C426052B260FFA00553DF5 /* Info.plist */,
+				F1C8D0F42B274E0300F7C59E /* TableViewCell.swift */,
 			);
 			path = "twitter clone";
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			name = "twitter clone";
 			packageProductDependencies = (
 				F1C426282B2616F400553DF5 /* SnapKit */,
+				F1C4262D2B26D08800553DF5 /* SnapKit */,
 			);
 			productName = "twitter clone";
 			productReference = F1C425F42B260FF800553DF5 /* twitter clone.app */;
@@ -219,6 +225,7 @@
 			mainGroup = F1C425EB2B260FF800553DF5;
 			packageReferences = (
 				F1C426272B2616F400553DF5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F1C4262C2B26D08800553DF5 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = F1C425F52B260FF800553DF5 /* Products */;
 			projectDirPath = "";
@@ -263,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C425FC2B260FF800553DF5 /* ViewController.swift in Sources */,
+				F1C8D0F52B274E0300F7C59E /* TableViewCell.swift in Sources */,
 				F1C425F82B260FF800553DF5 /* AppDelegate.swift in Sources */,
 				F1C425FA2B260FF800553DF5 /* SceneDelegate.swift in Sources */,
 			);
@@ -606,10 +614,23 @@
 				kind = branch;
 			};
 		};
+		F1C4262C2B26D08800553DF5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		F1C426282B2616F400553DF5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1C426272B2616F400553DF5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F1C4262D2B26D08800553DF5 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F1C426272B2616F400553DF5 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
